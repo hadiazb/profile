@@ -6,6 +6,8 @@ import {
 	AiFillMail,
 	AiFillLinkedin,
 	AiFillTwitterCircle,
+	AiOutlineDownload,
+	AiOutlineCaretDown,
 } from 'react-icons/ai';
 
 const HeaderProfile = () => {
@@ -18,13 +20,13 @@ const HeaderProfile = () => {
 				<h4>React Developer</h4>
 				<div className='icon'>
 					<div className='icon__git'>
-						<AiFillGithub size='25' />
-					</div>
-					<div className='icon__git'>
 						<AiFillPhone size='25' />
 					</div>
 					<div className='icon__git'>
 						<AiFillMail size='25' />
+					</div>
+					<div className='icon__git'>
+						<AiFillGithub size='25' />
 					</div>
 					<div className='icon__git'>
 						<AiFillLinkedin size='25' />
@@ -32,6 +34,24 @@ const HeaderProfile = () => {
 					<div className='icon__git'>
 						<AiFillTwitterCircle size='25' />
 					</div>
+				</div>
+			</div>
+			<div className='box__contact'>
+				<div className='box__contact-item'>
+					<h4>
+						DOWNLOAD{' '}
+						<span>
+							<AiOutlineDownload />
+						</span>
+					</h4>
+				</div>
+				<div className='box__contact-item'>
+					<h4>
+						CONTACT ME{'  '}
+						<span>
+							<AiOutlineCaretDown />
+						</span>
+					</h4>
 				</div>
 			</div>
 		</div>
