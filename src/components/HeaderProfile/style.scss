@@ -1,0 +1,49 @@
+.box {
+	width: 100%;
+	height: 100%;
+	position: relative;
+	&__header {
+		width: 100%;
+		height: 40%;
+		background-image: url('../../assets/programing.jpg');
+		background-size: cover;
+		background-position: center;
+		border-bottom-left-radius: 130% 10%;
+		border-bottom-right-radius: 130% 10%;
+		box-shadow: 0 2px 5px 1px black;
+	}
+	&__photo {
+		width: 150px;
+		height: 150px;
+		position: relative;
+		left: calc(50% - 75px);
+		top: -75px;
+		background-image: url('../../assets/profile.jpg');
+		background-size: cover;
+		background-position: center;
+		border-radius: 50%;
+		border: 1px solid rgba(255, 255, 255, 1);
+		box-shadow: 0 0 10px 4px black;
+	}
+	&__info {
+		text-align: center;
+		margin-top: -50px;
+		color: rgba(0, 0, 0, 0.8);
+		& h2 {
+			padding: 5px 0;
+		}
+		& h4 {
+			padding: 5px 0 20px;
+			font-style: oblique;
+			color: rgba(16, 139, 12, 0.8);
+		}
+		& .icon {
+			height: 50px;
+			display: flex;
+			justify-content: center;
+			&__git {
+				padding: 5px;
+			}
+		}
+	}
+}

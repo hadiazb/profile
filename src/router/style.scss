@@ -1,0 +1,15 @@
+@import '../styles/Global.scss';
+
+.margin {
+	width: 100%;
+	& .bullet {
+		width: 100%;
+		z-index: 1;
+		@media (min-width: 800px) {
+			display: flex;
+		}
+		@media (min-width: 1000px) {
+			padding-left: 80px;
+		}
+	}
+}
