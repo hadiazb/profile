@@ -17,7 +17,9 @@ const HeaderProfile = () => {
 			<div className='box__photo'></div>
 			<div className='box__info'>
 				<h2>Hugo A Díaz B</h2>
-				<h4>React Developer</h4>
+				<h4>Software Developer</h4>
+				<h5>MERN Stack</h5>
+				<h6>Bogota Colombia</h6>
 				<div className='icon'>
 					<div className='icon__git'>
 						<AiFillPhone size='25' />
@@ -39,7 +41,7 @@ const HeaderProfile = () => {
 			<div className='box__contact'>
 				<div className='box__contact-item'>
 					<h4>
-						DOWNLOAD{' '}
+						DOWNLOAD CV{' '}
 						<span>
 							<AiOutlineDownload />
 						</span>
