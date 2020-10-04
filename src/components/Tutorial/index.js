@@ -1,12 +1,12 @@
 import React from 'react';
 import './style.scss';
 
-const Blog = () => {
+const Tutorial = () => {
 	return (
-		<div className='blog'>
+		<div className='tutorials'>
 			<></>
 		</div>
 	);
 };
 
-export default Blog;
+export default Tutorial;

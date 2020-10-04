@@ -9,6 +9,18 @@ $color-primary: white;
 	background-color: $color-primary;
 	box-shadow: 0 0 10px 1px black;
 	z-index: 1;
+	overflow-y: scroll;
+	&::-webkit-scrollbar {
+		height: 400px;
+		width: 3px;
+		background: rgba(0, 0, 0, 0.2);
+		box-shadow: 0 0 1px black;
+	}
+	&::-webkit-scrollbar-thumb {
+		height: 3px;
+		background: rgba(255, 255, 255, 0.8);
+		border-radius: 1px;
+	}
 
 	@media (min-width: 800px) {
 		border-radius: 0;
