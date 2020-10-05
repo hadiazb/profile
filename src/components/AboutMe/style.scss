@@ -1,7 +1,22 @@
 .about {
+	position: absolute;
 	display: block;
-	width: 100%;
+	width: calc(100% - 40px);
 	color: rgba(0, 0, 0, 0.8);
+	animation-name: seeIn;
+	animation-duration: 1s;
+	animation-timing-function: ease-out;
+	animation-fill-mode: backwards;
+
+	@keyframes seeIn {
+		0% {
+			left: -100%;
+		}
+		100% {
+			left: 20px;
+		}
+	}
+
 	& h3 {
 		padding: 0 0 10px;
 		font-size: 1.3em;
@@ -14,13 +29,14 @@
 	}
 
 	&__content {
-		padding: 10px 10px;
+		padding: 10px 10px 0;
+		margin-bottom: 20px;
 		border: 1px solid rgba(0, 0, 0, 0.1);
 		border-radius: 4px;
 		box-shadow: 0 0 1px rgba(0, 0, 0, 0.8);
 
 		& p {
-			padding: 5px 0 20px;
+			padding: 5px 0 5px;
 			font-size: 0.8em;
 		}
 
@@ -32,7 +48,7 @@
 		}
 
 		&-bullets {
-			padding: 0 0px;
+			padding: 10px 0px 0;
 			display: grid;
 			gap: 5px;
 
@@ -71,13 +87,62 @@
 				display: grid;
 				grid-template-columns: 1fr;
 				gap: 10px;
-				border: 1px solid red;
+				// border: 1px solid red;
 				&__item {
-					border: 1px solid blue;
-					&-header {
+					// border: 1px solid blue;
+					margin: 5px 0 10px;
+					&-icon {
 						display: flex;
-						justify-content: space-between;
+						justify-content: flex-end;
+						& .icon {
+							width: 40px;
+							height: 40px;
+							margin-right: 10px;
+							display: flex;
+							align-items: center;
+							justify-content: center;
+							border-radius: 50%;
+							color: rgba(0, 0, 0, 0.5);
+							background-color: rgba(16, 139, 12, 0.2);
+						}
 					}
+				}
+
+				@media (min-width: 700px) {
+					grid-template-columns: 1fr 1fr;
+					gap: 15px;
+				}
+			}
+		}
+
+		&-skills {
+			margin-bottom: 30px;
+
+			& .skill {
+				margin: 10px 0;
+				display: grid;
+				grid-template-columns: 1fr;
+				gap: 15px;
+
+				&__specialty {
+					height: 100px;
+					display: flex;
+					align-items: center;
+					justify-content: space-between;
+
+					@media (min-width: 500px) {
+						flex-direction: column;
+					}
+				}
+
+				@media (min-width: 450px) {
+					grid-template-columns: 1fr 1fr;
+					gap: 20px;
+				}
+
+				@media (min-width: 1000px) {
+					grid-template-columns: 1fr 1fr 1fr;
+					gap: 20px;
 				}
 			}
 		}
