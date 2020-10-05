@@ -1,28 +1,23 @@
-import axios from 'axios';
 import {
 	LOADING,
 	ERROR,
-	GET_ALL,
-} from '../types/usersTypes';
+	GET_OPTION,
+} from '../types/mainsTypes';
 
-export const getAll = () => async (dispatch) => {
+export const getOption = (option) => async (dispatch) => {
 	dispatch({
 		type: LOADING,
 	});
-	try {
-		const responseOne = await axios.get(
-			'http://swapi.dev/api/people/?page=1'
-		);
 
-		const allData = [...responseOne.data.results];
+	if (option) {
 		dispatch({
-			type: GET_ALL,
-			payload: allData,
+			type: GET_OPTION,
+			payload: option,
 		});
-	} catch (error) {
+	} else {
 		dispatch({
 			type: ERROR,
-			payload: `Character notfound, error: ${error.message}`,
+			payload: `Option notfound`,
 		});
 	}
 };

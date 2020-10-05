@@ -27,5 +27,7 @@ $color-primary: white;
 		border-bottom-right-radius: 10px;
 		border-top-right-radius: 10px;
 		box-shadow: 3px 0 10px 1px black;
+		animation-duration: 3s;
+		animation-name: slide;
 	}
 }

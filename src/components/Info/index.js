@@ -21,7 +21,7 @@ const Info = (props) => {
 				return <Blog />;
 
 			default:
-				return <h2>Este es el Home de mi portafolio</h2>;
+				return <h2>No encontrada</h2>;
 		}
 	};
 

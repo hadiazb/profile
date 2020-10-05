@@ -1,18 +1,18 @@
 import {
-	GET_ALL,
+	GET_OPTION,
 	LOADING,
 	ERROR,
-} from '../types/mainsTyoes';
+} from '../types/mainsTypes';
 
 const INITIAL_STATE = {
-	mains: [],
+	mains: 1,
 	loading: false,
 	error: '',
 };
 
 export default (state = INITIAL_STATE, action) => {
 	switch (action.type) {
-		case GET_ALL:
+		case GET_OPTION:
 			return {
 				...state,
 				mains: action.payload,

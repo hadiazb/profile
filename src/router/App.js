@@ -1,21 +1,27 @@
-import React, { useState } from 'react';
+import React from 'react';
+import { connect } from 'react-redux';
 import './style.scss';
 import Main from '../components/Main/index';
 import Profile from '../components/Profile/index';
 import Info from '../components/Info/index';
 
-const App = () => {
-	const [key, setKey] = useState(1);
+import * as mainsActions from '../actions/mainsActions';
 
+const App = (props) => {
 	return (
 		<div className='container margin'>
 			<Main />
 			<div className='bullet'>
 				<Profile />
-				<Info keys={key} />
+				<Info keys={props.mains} />
 			</div>
 		</div>
 	);
 };
 
-export default App;
+const mapStateToProps = (reducers) => {
+	const { mainsReducer } = reducers;
+	return mainsReducer;
+};
+
+export default connect(mapStateToProps, mainsActions)(App);
