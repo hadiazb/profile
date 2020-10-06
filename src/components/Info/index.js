@@ -12,13 +12,13 @@ const Info = (props) => {
 				return <AboutMe />;
 
 			case 2:
-				return <Tutorial />;
-
-			case 3:
 				return <Work />;
 
-			case 4:
+			case 3:
 				return <Blog />;
+
+			case 4:
+				return <Tutorial />;
 
 			default:
 				return <h2>No encontrada</h2>;

@@ -1,5 +1,23 @@
 .work {
-	background-color: aqua;
-	width: 100%;
+	position: absolute;
+	display: block;
+	width: calc(100% - 40px);
+	color: rgba(0, 0, 0, 0.8);
+	border: 1px solid red;
 	height: 1000px;
+	animation-name: seeIn;
+	animation-duration: 1s;
+	animation-timing-function: ease-out;
+	animation-fill-mode: backwards;
+
+	& h3 {
+		padding: 0 0 10px;
+		font-size: 1.3em;
+	}
+	@media (min-width: 900px) {
+		padding: 10px;
+		& h3 {
+			font-size: 1.5em;
+		}
+	}
 }

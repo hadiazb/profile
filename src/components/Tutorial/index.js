@@ -4,7 +4,7 @@ import './style.scss';
 const Tutorial = () => {
 	return (
 		<div className='tutorials'>
-			<></>
+			<h3>Tutorials</h3>
 		</div>
 	);
 };
