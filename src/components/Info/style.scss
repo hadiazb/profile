@@ -12,7 +12,6 @@ $color-primary: white;
 	z-index: 1;
 	overflow-y: scroll;
 	&::-webkit-scrollbar {
-		// height: 400px;
 		width: 7px;
 		background: rgba(255, 255, 255, 0.8);
 		box-shadow: 0 0 1px black;
@@ -20,8 +19,15 @@ $color-primary: white;
 	}
 	&::-webkit-scrollbar-thumb {
 		height: 3px;
-		background: rgba(0, 0, 0, 0.3);
 		border-radius: 3px;
+	}
+
+	&:hover {
+		&::-webkit-scrollbar-thumb {
+			height: 3px;
+			background: rgba(0, 0, 0, 0.3);
+			border-radius: 3px;
+		}
 	}
 
 	@media (min-width: 800px) {
