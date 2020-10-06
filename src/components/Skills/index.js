@@ -5,7 +5,13 @@ import 'react-circular-progressbar/dist/styles.css';
 const Skills = () => {
 	return (
 		<div className='about__content-skills'>
-			<h4>Skills</h4>
+			<h4>Specialties</h4>
+			<p>
+				In the world of web development there are many
+				specialties such as Front, Back, Cloud and UI designer.
+				I am a FullStack developer focused on the Frontend with
+				React, but I also have knowledge of Back and UI design.
+			</p>
 			<div className='skill'>
 				<div className='skill__specialty'>
 					<CircularProgressbar

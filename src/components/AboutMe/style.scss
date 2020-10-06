@@ -117,7 +117,6 @@
 
 		&-skills {
 			margin-bottom: 30px;
-
 			& .skill {
 				margin: 10px 0;
 				display: grid;
@@ -126,6 +125,7 @@
 
 				&__specialty {
 					height: 100px;
+					padding: 0 10px 0 0px;
 					display: flex;
 					align-items: center;
 					justify-content: space-between;
@@ -143,6 +143,115 @@
 				@media (min-width: 1000px) {
 					grid-template-columns: 1fr 1fr 1fr;
 					gap: 20px;
+				}
+			}
+		}
+
+		&-tools {
+			margin-bottom: 20px;
+			& h4 {
+				padding: 5px 0 10px;
+			}
+
+			& .tools {
+				margin-top: 20px;
+				margin-bottom: 10px;
+				&__list {
+					display: grid;
+					grid-template-columns: 1fr 1fr;
+					gap: 15px;
+
+					@media (min-width: 400px) {
+						grid-template-columns: 1fr 1fr 1fr;
+						gap: 20px;
+					}
+
+					@media (min-width: 600px) {
+						grid-template-columns: 1fr 1fr 1fr 1fr;
+					}
+
+					@media (min-width: 800px) {
+						grid-template-columns: 1fr 1fr;
+					}
+
+					@media (min-width: 900px) {
+						grid-template-columns: 1fr 1fr 1fr;
+					}
+
+					@media (min-width: 1100px) {
+						grid-template-columns: 1fr 1fr 1fr 1fr;
+					}
+
+					@media (min-width: 1300px) {
+						grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+					}
+
+					& .icon {
+						display: flex;
+						justify-content: center;
+						align-items: center;
+					}
+				}
+			}
+		}
+
+		&-education {
+			margin: 10px 0 15px;
+
+			& h4 {
+				padding-bottom: 15px;
+			}
+
+			& .education {
+				padding-right: 5px;
+				padding-left: 5px;
+				&__list {
+					display: grid;
+					grid-template-columns: 1fr;
+					gap: 10px;
+
+					@media (min-width: 1200px) {
+						grid-template-columns: 1fr 1fr;
+						gap: 20px;
+					}
+
+					&-item {
+						padding-bottom: 5px;
+						display: flex;
+						align-items: center;
+						justify-content: space-between;
+						font-size: 10px;
+						border-bottom: 1px solid rgba(0, 0, 0, 0.2);
+
+						& .icon__style {
+							display: flex;
+							justify-content: center;
+							align-items: center;
+							width: 35px;
+							height: 35px;
+							border-radius: 50%;
+							background-color: rgba(16, 139, 12, 0.2);
+						}
+
+						@media (min-width: 400px) {
+							font-size: 10px;
+						}
+
+						@media (min-width: 400px) {
+							font-size: 13px;
+						}
+
+						& a {
+							width: 35px;
+							text-align: right;
+							display: inline-block;
+							color: rgba(16, 139, 12, 0.6);
+							text-decoration: none;
+							&:hover {
+								text-decoration: underline;
+							}
+						}
+					}
 				}
 			}
 		}
