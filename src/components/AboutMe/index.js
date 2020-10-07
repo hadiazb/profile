@@ -1,7 +1,7 @@
 import React from 'react';
 import './style.scss';
 import Skills from '../Skills/index';
-import Services from '../Services/index';
+import ListServices from '../ListServices/index';
 import Bullets from '../Bullets/index';
 import Tools from '../Tools/index';
 import Education from '../Education';
@@ -19,7 +19,7 @@ const AboutMe = () => {
 				</p>
 
 				<Bullets />
-				<Services />
+				<ListServices />
 				<Skills />
 				<Tools />
 				<Education />

@@ -1,19 +1,6 @@
 import React from 'react';
 import { CircularProgressbarWithChildren } from 'react-circular-progressbar';
-import {
-	DiNodejsSmall,
-	DiReact,
-	DiSass,
-	DiCss3Full,
-	DiGit,
-	DiHeroku,
-	DiHtml5,
-	DiJavascript1,
-	DiMongodb,
-	DiMysql,
-	DiPostgresql,
-	DiStylus,
-} from 'react-icons/di';
+import DataTools from '../../data/Tools/index';
 
 const Tools = () => {
 	return (
@@ -27,234 +14,27 @@ const Tools = () => {
 			</p>
 			<div className='tools'>
 				<div className='tools__list'>
-					<div className='icon'>
-						<CircularProgressbarWithChildren
-							value={50}
-							styles={{
-								root: {
-									width: '70px',
-								},
-								path: {
-									stroke: `rgba(16, 139, 12, 0.2)`,
-								},
-								text: {
-									fill: `rgba(16, 139, 12, 0.5)`,
-								},
-							}}
-						>
-							<DiReact size='25' />
-							<span style={{ fontSize: 10 }}>React</span>
-						</CircularProgressbarWithChildren>
-					</div>
-					<div className='icon'>
-						<CircularProgressbarWithChildren
-							value={80}
-							styles={{
-								root: {
-									width: '70px',
-								},
-								path: {
-									stroke: `rgba(16, 139, 12, 0.2)`,
-								},
-								text: {
-									fill: `rgba(16, 139, 12, 0.5)`,
-								},
-							}}
-						>
-							<DiSass size='25' />
-							<span style={{ fontSize: 10 }}>Sass</span>
-						</CircularProgressbarWithChildren>
-					</div>
-					<div className='icon'>
-						<CircularProgressbarWithChildren
-							value={95}
-							styles={{
-								root: {
-									width: '70px',
-								},
-								path: {
-									stroke: `rgba(16, 139, 12, 0.2)`,
-								},
-								text: {
-									fill: `rgba(16, 139, 12, 0.5)`,
-								},
-							}}
-						>
-							<DiNodejsSmall size='25' />
-							<span style={{ fontSize: 10 }}>Node</span>
-						</CircularProgressbarWithChildren>
-					</div>
-					<div className='icon'>
-						<CircularProgressbarWithChildren
-							value={40}
-							styles={{
-								root: {
-									width: '70px',
-								},
-								path: {
-									stroke: `rgba(16, 139, 12, 0.2)`,
-								},
-								text: {
-									fill: `rgba(16, 139, 12, 0.5)`,
-								},
-							}}
-						>
-							<DiCss3Full size='25' />
-							<span style={{ fontSize: 10 }}>CSS</span>
-						</CircularProgressbarWithChildren>
-					</div>
-					<div className='icon'>
-						<CircularProgressbarWithChildren
-							value={25}
-							styles={{
-								root: {
-									width: '70px',
-								},
-								path: {
-									stroke: `rgba(16, 139, 12, 0.2)`,
-								},
-								text: {
-									fill: `rgba(16, 139, 12, 0.5)`,
-								},
-							}}
-						>
-							<DiGit size='25' />
-							<span style={{ fontSize: 10 }}>Git</span>
-						</CircularProgressbarWithChildren>
-					</div>
-					<div className='icon'>
-						<CircularProgressbarWithChildren
-							value={25}
-							styles={{
-								root: {
-									width: '70px',
-								},
-								path: {
-									stroke: `rgba(16, 139, 12, 0.2)`,
-								},
-								text: {
-									fill: `rgba(16, 139, 12, 0.5)`,
-								},
-							}}
-						>
-							<DiHeroku size='25' />
-							<span style={{ fontSize: 10 }}>Heroku</span>
-						</CircularProgressbarWithChildren>
-					</div>
-					<div className='icon'>
-						<CircularProgressbarWithChildren
-							value={25}
-							styles={{
-								root: {
-									width: '70px',
-								},
-								path: {
-									stroke: `rgba(16, 139, 12, 0.2)`,
-								},
-								text: {
-									fill: `rgba(16, 139, 12, 0.5)`,
-								},
-							}}
-						>
-							<DiHtml5 size='25' />
-							<span style={{ fontSize: 10 }}>HTML5</span>
-						</CircularProgressbarWithChildren>
-					</div>
-					<div className='icon'>
-						<CircularProgressbarWithChildren
-							value={25}
-							styles={{
-								root: {
-									width: '70px',
-								},
-								path: {
-									stroke: `rgba(16, 139, 12, 0.2)`,
-								},
-								text: {
-									fill: `rgba(16, 139, 12, 0.5)`,
-								},
-							}}
-						>
-							<DiJavascript1 size='25' />
-							<span style={{ fontSize: 10 }}>JS</span>
-						</CircularProgressbarWithChildren>
-					</div>
-					<div className='icon'>
-						<CircularProgressbarWithChildren
-							value={25}
-							styles={{
-								root: {
-									width: '70px',
-								},
-								path: {
-									stroke: `rgba(16, 139, 12, 0.2)`,
-								},
-								text: {
-									fill: `rgba(16, 139, 12, 0.5)`,
-								},
-							}}
-						>
-							<DiMongodb size='25' />
-							<span style={{ fontSize: 10 }}>Mongo</span>
-						</CircularProgressbarWithChildren>
-					</div>
-					<div className='icon'>
-						<CircularProgressbarWithChildren
-							value={25}
-							styles={{
-								root: {
-									width: '70px',
-								},
-								path: {
-									stroke: `rgba(16, 139, 12, 0.2)`,
-								},
-								text: {
-									fill: `rgba(16, 139, 12, 0.5)`,
-								},
-							}}
-						>
-							<DiMysql size='25' />
-							<span style={{ fontSize: 10 }}>MySQL</span>
-						</CircularProgressbarWithChildren>
-					</div>
-					<div className='icon'>
-						<CircularProgressbarWithChildren
-							value={25}
-							styles={{
-								root: {
-									width: '70px',
-								},
-								path: {
-									stroke: `rgba(16, 139, 12, 0.2)`,
-								},
-								text: {
-									fill: `rgba(16, 139, 12, 0.5)`,
-								},
-							}}
-						>
-							<DiPostgresql size='25' />
-							<span style={{ fontSize: 10 }}>PostgSQL</span>
-						</CircularProgressbarWithChildren>
-					</div>
-					<div className='icon'>
-						<CircularProgressbarWithChildren
-							value={25}
-							styles={{
-								root: {
-									width: '70px',
-								},
-								path: {
-									stroke: `rgba(16, 139, 12, 0.2)`,
-								},
-								text: {
-									fill: `rgba(16, 139, 12, 0.5)`,
-								},
-							}}
-						>
-							<DiStylus size='25' />
-							<span style={{ fontSize: 10 }}>Stylus</span>
-						</CircularProgressbarWithChildren>
-					</div>
+					{DataTools.map((item) => (
+						<div className='icon' key={item.id}>
+							<CircularProgressbarWithChildren
+								value={item.value}
+								styles={{
+									root: {
+										width: '70px',
+									},
+									path: {
+										stroke: `rgba(16, 139, 12, 0.2)`,
+									},
+									text: {
+										fill: `rgba(16, 139, 12, 0.5)`,
+									},
+								}}
+							>
+								{item.icon}
+								<span style={{ fontSize: 10 }}>{item.title}</span>
+							</CircularProgressbarWithChildren>
+						</div>
+					))}
 				</div>
 			</div>
 		</div>
