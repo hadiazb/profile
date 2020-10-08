@@ -18,7 +18,7 @@ const Work = () => {
 								<p>{item.text}</p>
 								<div className='item__footer-class'>
 									<h6>{item.specialty}</h6>
-									<span></span>
+									<span>{item.icon}</span>
 								</div>
 							</div>
 							<div className='item__modal'></div>
@@ -31,3 +31,11 @@ const Work = () => {
 };
 
 export default Work;
+
+// service firebase.storage {
+//   match /b/{bucket}/o {
+//     match /{allPaths=**} {
+//       allow read, write: if request.auth != null;
+//     }
+//   }
+// }

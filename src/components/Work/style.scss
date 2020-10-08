@@ -57,10 +57,11 @@
 					background-color: rgba(0, 0, 0, 0.7);
 					height: 65%;
 					position: relative;
+					overflow: hidden;
 					z-index: 1;
 
 					& img {
-						height: 100%;
+						width: 140%;
 					}
 				}
 				&__footer {
@@ -69,12 +70,12 @@
 					position: relative;
 					z-index: 1;
 					& h5 {
-						padding: 2px 0;
+						padding: 5px 0;
 					}
 
 					& p {
 						font-size: 0.8em;
-						padding-bottom: 5px;
+						padding-bottom: 10px;
 					}
 
 					&-class {
@@ -83,7 +84,8 @@
 						justify-content: space-between;
 						align-items: center;
 						margin-right: 10px;
-						margin-bottom: 10px;
+						margin-left: 10px;
+						margin-bottom: 5px;
 
 						& h6 {
 							border: 1px solid rgba(16, 139, 12, 0.3);
@@ -93,13 +95,18 @@
 							text-align: center;
 							border-radius: 2px;
 							background-color: rgba(16, 139, 12, 0.2);
+							color: rgba(0, 0, 0, 0.5);
 						}
 
 						& span {
 							width: 30px;
 							height: 30px;
+							display: flex;
+							align-items: center;
+							justify-content: center;
 							border-radius: 50%;
 							background-color: rgba(16, 139, 12, 0.2);
+							color: rgba(0, 0, 0, 0.5);
 						}
 					}
 				}

@@ -1,3 +1,6 @@
+import React from 'react';
+import { CgFigma, CgCodeSlash } from 'react-icons/cg';
+import { FaPaintBrush } from 'react-icons/fa';
 import Image from '../../assets/programing.jpg';
 
 const DataWorks = [
@@ -9,6 +12,7 @@ const DataWorks = [
 		text: `Lorem ipsum dolor sit amet consectetur adipisicing
     elit. Perspiciatis ex neque, modi itaque.`,
 		specialty: 'Frontend',
+		icon: <FaPaintBrush size='15' />,
 	},
 	{
 		id: 2,
@@ -18,6 +22,7 @@ const DataWorks = [
 		text: `Lorem ipsum dolor sit amet consectetur adipisicing
     elit. Perspiciatis ex neque, modi itaque.`,
 		specialty: 'Frontend',
+		icon: <CgCodeSlash />,
 	},
 	{
 		id: 3,
@@ -27,6 +32,7 @@ const DataWorks = [
 		text: `Lorem ipsum dolor sit amet consectetur adipisicing
     elit. Perspiciatis ex neque, modi itaque.`,
 		specialty: 'Frontend',
+		icon: <CgFigma />,
 	},
 	{
 		id: 4,
@@ -36,6 +42,7 @@ const DataWorks = [
 		text: `Lorem ipsum dolor sit amet consectetur adipisicing
     elit. Perspiciatis ex neque, modi itaque.`,
 		specialty: 'Frontend',
+		icon: <CgCodeSlash />,
 	},
 	{
 		id: 5,
@@ -45,6 +52,7 @@ const DataWorks = [
 		text: `Lorem ipsum dolor sit amet consectetur adipisicing
     elit. Perspiciatis ex neque, modi itaque.`,
 		specialty: 'Frontend',
+		icon: <CgCodeSlash />,
 	},
 	{
 		id: 6,
@@ -54,6 +62,7 @@ const DataWorks = [
 		text: `Lorem ipsum dolor sit amet consectetur adipisicing
     elit. Perspiciatis ex neque, modi itaque.`,
 		specialty: 'Frontend',
+		icon: <FaPaintBrush size='15' />,
 	},
 	{
 		id: 7,
@@ -63,6 +72,7 @@ const DataWorks = [
 		text: `Lorem ipsum dolor sit amet consectetur adipisicing
     elit. Perspiciatis ex neque, modi itaque.`,
 		specialty: 'Frontend',
+		icon: <CgCodeSlash />,
 	},
 	{
 		id: 8,
@@ -72,6 +82,7 @@ const DataWorks = [
 		text: `Lorem ipsum dolor sit amet consectetur adipisicing
     elit. Perspiciatis ex neque, modi itaque.`,
 		specialty: 'Frontend',
+		icon: <FaPaintBrush size='15' />,
 	},
 	{
 		id: 9,
@@ -81,6 +92,7 @@ const DataWorks = [
 		text: `Lorem ipsum dolor sit amet consectetur adipisicing
     elit. Perspiciatis ex neque, modi itaque.`,
 		specialty: 'Frontend',
+		icon: <CgCodeSlash />,
 	},
 	{
 		id: 10,
@@ -90,6 +102,7 @@ const DataWorks = [
 		text: `Lorem ipsum dolor sit amet consectetur adipisicing
     elit. Perspiciatis ex neque, modi itaque.`,
 		specialty: 'Frontend',
+		icon: <CgFigma />,
 	},
 	{
 		id: 11,
@@ -98,6 +111,8 @@ const DataWorks = [
 		title: 'Title',
 		text: `Lorem ipsum dolor sit amet consectetur adipisicing
     elit. Perspiciatis ex neque, modi itaque.`,
+		specialty: 'Frontend',
+		icon: <FaPaintBrush size='15' />,
 	},
 	{
 		id: 12,
@@ -107,6 +122,7 @@ const DataWorks = [
 		text: `Lorem ipsum dolor sit amet consectetur adipisicing
     elit. Perspiciatis ex neque, modi itaque.`,
 		specialty: 'Frontend',
+		icon: <CgCodeSlash />,
 	},
 ];
 
