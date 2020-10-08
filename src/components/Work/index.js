@@ -1,14 +1,76 @@
-import React from 'react';
+import React, { useState } from 'react';
 import './style.scss';
 import DataWorks from '../../data/Works/index';
 
 const Work = () => {
+	const [select, setSelect] = useState(0);
+	const newData = [];
+
+	const selectContent = (newData) => {
+		switch (select) {
+			case 1:
+				newData = DataWorks.filter(
+					(item) => item.specialty === 'Frontend'
+				);
+				return newData;
+
+			case 2:
+				newData = DataWorks.filter(
+					(item) => item.specialty === 'Backend'
+				);
+				return newData;
+
+			case 3:
+				newData = DataWorks.filter(
+					(item) => item.specialty === 'UI'
+				);
+				return newData;
+			case 4:
+				return DataWorks;
+
+			default:
+				return DataWorks;
+		}
+	};
+
+	const Form = () => (
+		<form className='work__content-input'>
+			<div onClick={() => setSelect(1)}>
+				<input
+					type='radio'
+					name='type'
+					id='front'
+					value='front'
+				/>
+				<label htmlFor='front'>Front</label>
+			</div>
+			<div onClick={() => setSelect(2)}>
+				<input
+					type='radio'
+					name='type'
+					id='back'
+					value='back'
+				/>
+				<label htmlFor='back'>Back</label>
+			</div>
+			<div onClick={() => setSelect(3)}>
+				<input type='radio' name='type' id='ui' value='ui' />
+				<label htmlFor='ui'>UI</label>
+			</div>
+			<div onClick={() => setSelect(4)}>
+				<input type='radio' name='type' id='all' value='all' />
+				<label htmlFor='all'>All</label>
+			</div>
+		</form>
+	);
+
 	return (
 		<div className='work'>
 			<h3>Work</h3>
 			<div className='work__content'>
+				{Form()}
 				<div className='work__content-item'>
-					{DataWorks.map((item) => (
+					{selectContent(newData).map((item) => (
 						<div className='item' key={item.id}>
 							<div className='item__header'>
 								<img src={item.image} alt={item.text_image} />
@@ -31,11 +93,3 @@ const Work = () => {
 };
 
 export default Work;
-
-// service firebase.storage {
-//   match /b/{bucket}/o {
-//     match /{allPaths=**} {
-//       allow read, write: if request.auth != null;
-//     }
-//   }
-// }

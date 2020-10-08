@@ -21,7 +21,7 @@ const DataWorks = [
 		title: 'Title',
 		text: `Lorem ipsum dolor sit amet consectetur adipisicing
     elit. Perspiciatis ex neque, modi itaque.`,
-		specialty: 'Frontend',
+		specialty: 'Backend',
 		icon: <CgCodeSlash />,
 	},
 	{
@@ -31,7 +31,7 @@ const DataWorks = [
 		title: 'Title',
 		text: `Lorem ipsum dolor sit amet consectetur adipisicing
     elit. Perspiciatis ex neque, modi itaque.`,
-		specialty: 'Frontend',
+		specialty: 'Backend',
 		icon: <CgFigma />,
 	},
 	{
@@ -51,7 +51,7 @@ const DataWorks = [
 		title: 'Title',
 		text: `Lorem ipsum dolor sit amet consectetur adipisicing
     elit. Perspiciatis ex neque, modi itaque.`,
-		specialty: 'Frontend',
+		specialty: 'UI',
 		icon: <CgCodeSlash />,
 	},
 	{
@@ -61,7 +61,7 @@ const DataWorks = [
 		title: 'Title',
 		text: `Lorem ipsum dolor sit amet consectetur adipisicing
     elit. Perspiciatis ex neque, modi itaque.`,
-		specialty: 'Frontend',
+		specialty: 'Backend',
 		icon: <FaPaintBrush size='15' />,
 	},
 	{
@@ -81,7 +81,7 @@ const DataWorks = [
 		title: 'Title',
 		text: `Lorem ipsum dolor sit amet consectetur adipisicing
     elit. Perspiciatis ex neque, modi itaque.`,
-		specialty: 'Frontend',
+		specialty: 'UI',
 		icon: <FaPaintBrush size='15' />,
 	},
 	{
@@ -91,7 +91,7 @@ const DataWorks = [
 		title: 'Title',
 		text: `Lorem ipsum dolor sit amet consectetur adipisicing
     elit. Perspiciatis ex neque, modi itaque.`,
-		specialty: 'Frontend',
+		specialty: 'Backend',
 		icon: <CgCodeSlash />,
 	},
 	{
@@ -111,7 +111,7 @@ const DataWorks = [
 		title: 'Title',
 		text: `Lorem ipsum dolor sit amet consectetur adipisicing
     elit. Perspiciatis ex neque, modi itaque.`,
-		specialty: 'Frontend',
+		specialty: 'UI',
 		icon: <FaPaintBrush size='15' />,
 	},
 	{
@@ -121,7 +121,7 @@ const DataWorks = [
 		title: 'Title',
 		text: `Lorem ipsum dolor sit amet consectetur adipisicing
     elit. Perspiciatis ex neque, modi itaque.`,
-		specialty: 'Frontend',
+		specialty: 'Backend',
 		icon: <CgCodeSlash />,
 	},
 ];
