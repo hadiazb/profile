@@ -28,7 +28,9 @@ const App = (props) => {
 
 		return <Spinner />;
 	};
-	return <div className='container margin'>{loading()}</div>;
+	return (
+		<div className='container margin root'>{loading()}</div>
+	);
 };
 
 const mapStateToProps = (reducers) => {

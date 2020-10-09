@@ -11,6 +11,7 @@
 
 	& h3 {
 		font-size: 1.3em;
+		padding-bottom: 10px;
 	}
 
 	@media (min-width: 900px) {
@@ -91,6 +92,7 @@
 
 				& input[type='radio']:checked + label:before {
 					display: none;
+					transition: 10ms;
 				}
 			}
 		}
