@@ -8,10 +8,16 @@ import {
 	AiOutlineCaretDown,
 } from 'react-icons/ai';
 import Modal from '../Modal/index';
+import {
+	AiOutlineClose,
+	AiFillPhone,
+	AiOutlineMail,
+	AiOutlineWhatsApp,
+} from 'react-icons/ai';
 
 const HeaderProfile = () => {
 	const [modal, setModal] = useState(false);
-	console.log('modal externo', modal);
+
 	return (
 		<div className='box'>
 			<div className='box__header'></div>
@@ -78,7 +84,60 @@ const HeaderProfile = () => {
 						</span>
 					</h4>
 				</button>
-				<Modal isOpen={modal} />
+				<Modal isOpen={modal}>
+					<button
+						onClick={() =>
+							!modal ? setModal(true) : setModal(false)
+						}
+						className='modal__container-button'
+					>
+						<AiOutlineClose size='20' />
+					</button>
+					<div className='modal__container-content'>
+						<ul>
+							<li>
+								<div>
+									<AiOutlineMail size='20' />
+								</div>
+								<p>hugoandresdiazbernal@gmail.com</p>
+							</li>
+							<li>
+								<div>
+									<AiFillPhone size='20' />
+								</div>
+								<p>(+57) 311-268-1981</p>
+							</li>
+							<li>
+								<div>
+									<AiOutlineWhatsApp size='20' />
+								</div>
+								<p>(+57) 311-268-1981</p>
+							</li>
+						</ul>
+						<form className='form'>
+							<input
+								className='form__text'
+								type='name'
+								placeholder='Name...'
+							/>
+							<input
+								className='form__text'
+								type='email'
+								placeholder='Email...'
+							/>
+							<input
+								className='form__commentary'
+								type='text'
+								placeholder='Commentary...'
+							/>
+							<input
+								className='form__submit'
+								type='submit'
+								value='Send'
+							/>
+						</form>
+					</div>
+				</Modal>
 			</div>
 		</div>
 	);

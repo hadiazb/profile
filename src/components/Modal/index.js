@@ -1,6 +1,6 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
-import ContactInformation from '../ContactInformation/index';
+import './style.scss';
 
 const Modal = (props) => {
 	if (!props.isOpen) {
@@ -8,7 +8,12 @@ const Modal = (props) => {
 	}
 
 	return ReactDOM.createPortal(
-		<ContactInformation />,
+		<div className='modal'>
+			<div className='modal__container'>
+				<h2 className='modal__container-title'>Contact Me</h2>
+				{props.children}
+			</div>
+		</div>,
 		document.getElementById('modal')
 	);
 };
