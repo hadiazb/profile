@@ -8,9 +8,12 @@ const Education = () => {
 		<div className='about__content-education'>
 			<h4>Education</h4>
 			<p>
-				Lorem ipsum, dolor sit amet consectetur adipisicing
-				elit. Deleniti eos, quaerat maiores tempore dolorum
-				fugiat.
+				I am a Mechanical Engineer by profession, but a
+				Software Developer by vocation, I am also a person who believes
+				in any form of education, especially autonomous
+				education. I consider myself a very curious person open
+				to learning new things, I also like taking on challenges
+				and above all meeting them.
 			</p>
 			<div className='education'>
 				<ul className='education__list'>

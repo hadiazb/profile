@@ -72,9 +72,16 @@ const Work = () => {
 				<div className='work__content-item'>
 					{selectContent(newData).map((item) => (
 						<div className='item' key={item.id}>
-							<div className='item__header'>
-								<img src={item.image} alt={item.text_image} />
-							</div>
+							<div
+								className='item__header'
+								style={{
+									backgroundImage: `url(${item.image})`,
+									backgroundRepeat: 'no-repeat',
+									backgroundSize: 'cover',
+									backgroundPosition: 'center',
+									opacity: 0.8,
+								}}
+							></div>
 							<div className='item__footer'>
 								<h5>{item.title}</h5>
 								<p>{item.text}</p>

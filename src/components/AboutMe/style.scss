@@ -38,6 +38,8 @@
 		& p {
 			padding: 5px 0 5px;
 			font-size: 0.8em;
+			font-weight: 300;
+			line-height: 17px;
 		}
 
 		@media (min-width: 900px) {
@@ -87,10 +89,13 @@
 				display: grid;
 				grid-template-columns: 1fr;
 				gap: 10px;
-				// border: 1px solid red;
 				&__item {
-					// border: 1px solid blue;
 					margin: 5px 0 10px;
+					& p {
+						font-weight: 300;
+						line-height: 15px;
+						font-size: 12px;
+					}
 					&-icon {
 						display: flex;
 						justify-content: flex-end;
@@ -117,6 +122,12 @@
 
 		&-skills {
 			margin-bottom: 30px;
+
+			& p {
+				font-size: 14px;
+				font-weight: 300;
+				line-height: 18px;
+			}
 			& .skill {
 				margin: 10px 0;
 				display: grid;

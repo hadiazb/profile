@@ -2,13 +2,21 @@ import React from 'react';
 import { CgFigma, CgCodeSlash } from 'react-icons/cg';
 import { FaPaintBrush } from 'react-icons/fa';
 import Image from '../../assets/programing.jpg';
+import WeatherLogin from '../../assets/Projects/weather.png';
+import CuartoDeMilla from '../../assets/Projects/Cuartodemilla.png';
+import GrupoDot from '../../assets/Projects/grupodot.png';
+import Cycling from '../../assets/Projects/cycling.png';
+import Covid19 from '../../assets/Projects/covid19.png';
+import Podcasts from '../../assets/Projects/podcasts.png';
+import Vienes from '../../assets/Projects/vienes.png';
+import Babysitter from '../../assets/Projects/babysitter.png';
 
 const DataWorks = [
 	{
 		id: 1,
-		image: Image,
+		image: WeatherLogin,
 		text_image: 'Imagen',
-		title: 'Title',
+		title: 'Global Weather Application',
 		text: `Lorem ipsum dolor sit amet consectetur adipisicing
     elit. Perspiciatis ex neque, modi itaque.`,
 		specialty: 'Frontend',
@@ -16,29 +24,29 @@ const DataWorks = [
 	},
 	{
 		id: 2,
-		image: Image,
+		image: CuartoDeMilla,
 		text_image: 'Imagen',
-		title: 'Title',
+		title: '1/4 de Milla',
 		text: `Lorem ipsum dolor sit amet consectetur adipisicing
     elit. Perspiciatis ex neque, modi itaque.`,
-		specialty: 'Backend',
+		specialty: 'Frontend',
 		icon: <CgCodeSlash />,
 	},
 	{
 		id: 3,
-		image: Image,
+		image: GrupoDot,
 		text_image: 'Imagen',
-		title: 'Title',
+		title: 'Search weather city',
 		text: `Lorem ipsum dolor sit amet consectetur adipisicing
     elit. Perspiciatis ex neque, modi itaque.`,
-		specialty: 'Backend',
+		specialty: 'Frontend',
 		icon: <CgFigma />,
 	},
 	{
 		id: 4,
-		image: Image,
+		image: Cycling,
 		text_image: 'Imagen',
-		title: 'Title',
+		title: 'Redux Cycling Manager',
 		text: `Lorem ipsum dolor sit amet consectetur adipisicing
     elit. Perspiciatis ex neque, modi itaque.`,
 		specialty: 'Frontend',
@@ -46,9 +54,9 @@ const DataWorks = [
 	},
 	{
 		id: 5,
-		image: Image,
+		image: Covid19,
 		text_image: 'Imagen',
-		title: 'Title',
+		title: 'USA Covid 19 ',
 		text: `Lorem ipsum dolor sit amet consectetur adipisicing
     elit. Perspiciatis ex neque, modi itaque.`,
 		specialty: 'UI',
@@ -56,9 +64,9 @@ const DataWorks = [
 	},
 	{
 		id: 6,
-		image: Image,
+		image: Podcasts,
 		text_image: 'Imagen',
-		title: 'Title',
+		title: 'Podcasts',
 		text: `Lorem ipsum dolor sit amet consectetur adipisicing
     elit. Perspiciatis ex neque, modi itaque.`,
 		specialty: 'Backend',
@@ -66,9 +74,9 @@ const DataWorks = [
 	},
 	{
 		id: 7,
-		image: Image,
+		image: Vienes,
 		text_image: 'Imagen',
-		title: 'Title',
+		title: 'Vienes',
 		text: `Lorem ipsum dolor sit amet consectetur adipisicing
     elit. Perspiciatis ex neque, modi itaque.`,
 		specialty: 'Frontend',
@@ -76,12 +84,12 @@ const DataWorks = [
 	},
 	{
 		id: 8,
-		image: Image,
+		image: Babysitter,
 		text_image: 'Imagen',
-		title: 'Title',
+		title: 'BabySitter Finder',
 		text: `Lorem ipsum dolor sit amet consectetur adipisicing
     elit. Perspiciatis ex neque, modi itaque.`,
-		specialty: 'UI',
+		specialty: 'Backend',
 		icon: <FaPaintBrush size='15' />,
 	},
 	{
