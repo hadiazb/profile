@@ -5,7 +5,7 @@ import {
 } from '../types/languageTypes';
 
 const INITIAL_STATE = {
-	language: true,
+	language: false,
 	loading: false,
 	error: '',
 };
