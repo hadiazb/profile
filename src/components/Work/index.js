@@ -1,9 +1,20 @@
 import React, { useState } from 'react';
 import './style.scss';
-import DataWorks from '../../data/Works/index';
+import { connect } from 'react-redux';
+import * as mainsActions from '../../actions/mainsActions';
+import * as languageActions from '../../actions/languageActions';
+import DataWorksEnglish from '../../data/Works/English';
+import DataWorksSpanish from '../../data/Works/Spanish';
 
-const Work = () => {
+const Work = (props) => {
+	const {
+		languageReducer: { language },
+	} = props;
+
 	const [select, setSelect] = useState(0);
+	const DataWorks = !language
+		? DataWorksEnglish
+		: DataWorksSpanish;
 	const newData = [];
 
 	const selectContent = (newData) => {
@@ -59,14 +70,16 @@ const Work = () => {
 			</div>
 			<div onClick={() => setSelect(4)}>
 				<input type='radio' name='type' id='all' value='all' />
-				<label htmlFor='all'>All</label>
+				<label htmlFor='all'>
+					{!language ? 'All' : 'Todo'}
+				</label>
 			</div>
 		</form>
 	);
 
 	return (
 		<div className='work'>
-			<h3>Work</h3>
+			<h3>{!language ? 'Work' : 'Proyectos'}</h3>
 			<div className='work__content'>
 				{Form()}
 				<div className='work__content-item'>
@@ -99,4 +112,17 @@ const Work = () => {
 	);
 };
 
-export default Work;
+const mapStateToProps = (reducers) => {
+	const { mainsReducer, languageReducer } = reducers;
+	return { mainsReducer, languageReducer };
+};
+
+const mapDispatchToProps = {
+	...mainsActions,
+	...languageActions,
+};
+
+export default connect(
+	mapStateToProps,
+	mapDispatchToProps
+)(Work);

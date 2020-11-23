@@ -18,10 +18,10 @@ const DataWorks = [
 		text_image: 'Imagen',
 		title: 'Global Weather Application',
 		text: `
-		In this project I had the opportunity to create the frontend
-		with React using Redux, Weather Application allows you to
-		create an account to access Weather services for more than
-		200 cities in the world in real time`,
+    En este proyecto tuve la oportunidad de crear el frontend
+    con React usando Redux, Weather Application te permite
+    crear una cuenta para acceder a los servicios meteorológicos por más de
+    200 ciudades del mundo en tiempo real`,
 		specialty: 'Frontend',
 		icon: <FaPaintBrush size='15' />,
 	},
@@ -31,9 +31,9 @@ const DataWorks = [
 		text_image: 'Imagen',
 		title: '1/4 de Milla',
 		text: `
-		Project developed in React and Python django to inform all
-		users who are in the Mexican territory about fuel costs,
-		here you can make reports, create suggestions and much more`,
+    Proyecto desarrollado en React y Python django para informar a todos
+    usuarios que se encuentran en territorio mexicano sobre costos de combustible,
+    aquí puedes hacer informes, crear sugerencias y mucho más`,
 		specialty: 'Frontend',
 		icon: <CgCodeSlash />,
 	},
@@ -42,8 +42,9 @@ const DataWorks = [
 		image: GrupoDot,
 		text_image: 'Imagen',
 		title: 'Search weather city',
-		text: `In this project I had the opportunity to create the frontend
-		with React using Redux, Webpack and more tools.`,
+		text: `
+    En este proyecto tuve la oportunidad de crear el frontend
+    con React usando Redux, Webpack y más herramientas.`,
 		specialty: 'Frontend',
 		icon: <CgFigma />,
 	},
@@ -52,8 +53,8 @@ const DataWorks = [
 		image: Cycling,
 		text_image: 'Imagen',
 		title: 'Redux Cycling Manager',
-		text: `Personal project with React and Redux, you can be Colombian Cycling
-		Manager`,
+		text: `Proyecto personal con React y Redux, puedes ser Tecnico del
+    Ciclismo colombiano`,
 		specialty: 'Frontend',
 		icon: <CgCodeSlash />,
 	},
@@ -62,10 +63,9 @@ const DataWorks = [
 		image: Covid19,
 		text_image: 'Imagen',
 		title: 'USA Covid 19 ',
-		text: `In this project I had the opportunity to create the frontend
-		with React using Redux, Weather Application allows you to
-		create an account to access Weather services for more than
-		200 cities in the world in real time`,
+		text: `En este proyecto tuve la oportunidad de crear el frontend
+    con React usando componentes con estilo por estilos, puede ver el google
+    aplicación de mapas.`,
 		specialty: 'UI',
 		icon: <CgCodeSlash />,
 	},
@@ -74,10 +74,9 @@ const DataWorks = [
 		image: Podcasts,
 		text_image: 'Imagen',
 		title: 'Podcasts',
-		text: `In this project I had the opportunity to create the frontend
-		with React using Redux, Weather Application allows you to
-		create an account to access Weather services for more than
-		200 cities in the world in real time`,
+		text: `
+    El proyecto de podcast está hecho en Next.js, puedes escuchar diferentes
+    podcast sobre muchos temas.`,
 		specialty: 'Backend',
 		icon: <FaPaintBrush size='15' />,
 	},
@@ -87,9 +86,9 @@ const DataWorks = [
 		text_image: 'Imagen',
 		title: 'Vienes',
 		text: `
-		Project to inform about the different roots that the Mexican
-		government misguided to sell and repair the state. Here React
-		was used with Material UI`,
+    Proyecto para informar sobre las diferentes raíces que tiene el mexicano
+    gobierno equivocado al vender y reparar el estado. Aquí reacciona
+    se utilizó con Material UI`,
 		specialty: 'Frontend',
 		icon: <CgCodeSlash />,
 	},
@@ -99,13 +98,13 @@ const DataWorks = [
 		text_image: 'Imagen',
 		title: 'BabySitter Finder',
 		text: `
-		In this project I had the opportunity to create the backend
-		using Node.js with Express to design the API, in this project
-		database services were integrated in MySQL with a server which
-		also communicates with a Front developed in React`,
+    En este proyecto tuve la oportunidad de crear el backend
+    usando Node.js con Express para diseñar la API, en este proyecto
+    Los servicios de base de datos se integraron en MySQL con un servidor que
+    también se comunica con un Frente desarrollado en React`,
 		specialty: 'Backend',
 		icon: <FaPaintBrush size='15' />,
-	}
+	},
 ];
 
 export default DataWorks;

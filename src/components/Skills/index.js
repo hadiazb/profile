@@ -2,15 +2,24 @@ import React from 'react';
 import { CircularProgressbar } from 'react-circular-progressbar';
 import 'react-circular-progressbar/dist/styles.css';
 
-const Skills = () => {
+const Skills = (props) => {
 	return (
 		<div className='about__content-skills'>
-			<h4>Specialties</h4>
+			<h4>
+				{props.language ? 'Specialties' : 'Especialidades'}
+			</h4>
 			<p>
-				In the world of web development there are many
+				{props.language
+					? `In the world of web development there are many
 				specialties such as Front, Back, Cloud and UI designer.
 				I am a FullStack developer focused on the Frontend with
-				React, but I also have knowledge of Back and UI design.
+				React, but I also have knowledge of Back and UI design.`
+					: `
+				En el mundo del desarrollo web hay muchas
+				especialidades como Front, Back, Cloud y UI Designer.
+				Soy un desarrollador FullStack enfocado en el Frontend con
+				Reaccionar, pero también tengo conocimientos de diseño de
+				interfaz de usuario y espalda.`}
 			</p>
 			<div className='skill'>
 				<div className='skill__specialty'>

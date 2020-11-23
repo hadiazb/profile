@@ -1,22 +1,24 @@
 import React from 'react';
 
-const Bullets = () => {
+const Bullets = (props) => {
 	return (
 		<div className='about__content-bullets'>
 			<div className='bullet__content'>
-				<h5>AGE</h5>
+				<h5>{props.language ? 'AGE' : 'EDAD'}</h5>
 				<h5 className='bullet__content-response'>30</h5>
 			</div>
 			<div className='bullet__content'>
-				<h5>RESIDENCE</h5>
+				<h5>{props.language ? 'RESIDENCE' : 'RECIDENCIA'}</h5>
 				<h5 className='bullet__content-response'>Colombia</h5>
 			</div>
 			<div className='bullet__content'>
-				<h5>FREELANCE</h5>
-				<h5 className='bullet__content-response'>Available</h5>
+				<h5>{props.language ? 'FREELANCE' : 'FREELANCE'}</h5>
+				<h5 className='bullet__content-response'>
+					{props.language ? 'Available' : 'Disponible'}
+				</h5>
 			</div>
 			<div className='bullet__content'>
-				<h5>ADDRESS</h5>
+				<h5>{props.language ? 'ADDRESS' : 'CIUDAD'}</h5>
 				<h5 className='bullet__content-response'>Bogota</h5>
 			</div>
 		</div>

@@ -2,15 +2,25 @@ import React from 'react';
 import { CircularProgressbarWithChildren } from 'react-circular-progressbar';
 import DataTools from '../../data/Tools/index';
 
-const Tools = () => {
+const Tools = (props) => {
 	return (
 		<div className='about__content-tools'>
-			<h4>Tools more used</h4>
+			<h4>
+				{props.language
+					? 'Tools more used'
+					: 'Herramientas usadas'}
+			</h4>
 			<p>
-				From my experience as a developer I can say that the
+				{props.language
+					? `From my experience as a developer I can say that the
 				technologies that I have used the most in both frontend
 				and backend projects are varied, here you can see the
-				level of expertise I have in some of these.
+				level of expertise I have in some of these.`
+					: `
+				Desde mi experiencia como desarrollador puedo decir que el
+				tecnologías que más he usado tanto en frontend
+				y los proyectos de backend son variados, aquí puedes ver los
+				nivel de experiencia que tengo en algunos de estos.`}
 			</p>
 			<div className='tools'>
 				<div className='tools__list'>

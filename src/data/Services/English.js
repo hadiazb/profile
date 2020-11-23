@@ -6,7 +6,7 @@ import {
 	FaCloud,
 } from 'react-icons/fa';
 
-const DataServices = [
+const DataServicesEnglish = [
 	{
 		id: 1,
 		title: 'Frontend',
@@ -51,4 +51,4 @@ const DataServices = [
 	},
 ];
 
-export default DataServices;
+export default DataServicesEnglish;
