@@ -167,11 +167,11 @@ const HeaderProfile = (props) => {
 								type='email'
 								placeholder='Email...'
 							/>
-							<input
+							<textarea
 								className='form__commentary'
 								type='text'
 								placeholder='Commentary...'
-							/>
+							></textarea>
 							<input
 								className='form__submit'
 								type='submit'
