@@ -7,7 +7,7 @@ import {
 	AiOutlineDownload,
 	AiOutlineCaretDown,
 } from 'react-icons/ai';
-import Modal from '../Modal/index';
+import Modal from '../ModalContact/index';
 import {
 	AiOutlineClose,
 	AiFillPhone,
@@ -107,7 +107,9 @@ const HeaderProfile = (props) => {
 					href='https://firebasestorage.googleapis.com/v0/b/portafolio-a8d13.appspot.com/o/Potafolio%2FProfile%2FCV%2Fhadiazb.pdf?alt=media&token=c37a3234-7989-4e90-bd6e-c299ec88509e'
 				>
 					<h4>
-						DOWNLOAD CV{' '}
+						{!props.languageReducer.language
+							? 'DOWNLOAD CV'
+							: 'DESCARGAR CV'}
 						<span>
 							<AiOutlineDownload />
 						</span>
@@ -120,13 +122,18 @@ const HeaderProfile = (props) => {
 					}
 				>
 					<h4>
-						CONTACT ME{'  '}
+						{!props.languageReducer.language
+							? 'CONTACT ME'
+							: 'CONTACTAME'}
 						<span>
 							<AiOutlineCaretDown />
 						</span>
 					</h4>
 				</button>
-				<Modal isOpen={modal}>
+				<Modal
+					isOpen={modal}
+					language={props.languageReducer.language}
+				>
 					<button
 						onClick={() =>
 							!modal ? setModal(true) : setModal(false)

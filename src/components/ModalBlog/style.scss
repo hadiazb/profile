@@ -1,0 +1,103 @@
+.modal-blog {
+	position: fixed;
+	top: 0;
+	left: 0;
+	right: 0;
+	bottom: 0;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	z-index: 10;
+	background-color: rgba(0, 0, 0, 0.5);
+
+	&__container {
+		background-color: white;
+		position: relative;
+		width: 90%;
+		height: 620px;
+		padding: 20px;
+		border-radius: 5px;
+		color: rgba(0, 0, 0, 0.5);
+
+		@media (min-width: 500px) {
+			width: 60%;
+		}
+
+		&-outside {
+			height: 30px;
+			width: 100%;
+			margin: 0 0 10px;
+			display: flex;
+			justify-content: flex-end;
+			align-items: center;
+			cursor: pointer;
+			color: rgba(0, 0, 0, 0.5);
+			&:hover {
+				color: rgba(16, 139, 12, 0.3);
+				font-weight: 800;
+			}
+		}
+
+		&-content {
+			padding: 0 30px;
+
+			& .title {
+				width: 100%;
+				margin-bottom: 15px;
+				font-size: 20px;
+				text-align: center;
+			}
+
+			& .intro {
+        width: 100%;
+				height: 400px;
+				font-size: 15px;
+				font-weight: 300;
+				line-height: 18px;
+				letter-spacing: 1px;
+        margin-bottom: 20px;
+				overflow-y: scroll;
+				&::-webkit-scrollbar {
+					width: 7px;
+					background: rgba(255, 255, 255, 0.8);
+					box-shadow: 0 0 1px black;
+					border-radius: 5px;
+				}
+				&::-webkit-scrollbar-thumb {
+					height: 3px;
+					border-radius: 3px;
+				}
+
+				&:hover {
+					&::-webkit-scrollbar-thumb {
+						height: 3px;
+						background: rgba(0, 0, 0, 0.3);
+						border-radius: 3px;
+					}
+				}
+			}
+
+			& .class-label {
+				width: 120px;
+				font-size: 14px;
+				font-weight: 500;
+				&__time {
+					font-style: italic;
+					margin-left: 5px;
+					font-weight: 200;
+				}
+			}
+
+			& .time {
+				margin: 5px 0;
+				font-size: 14px;
+				font-weight: 500;
+				&__time {
+					font-style: italic;
+          margin-left: 5px;
+					font-weight: 200;
+				}
+			}
+		}
+	}
+}

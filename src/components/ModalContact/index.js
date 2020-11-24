@@ -10,7 +10,9 @@ const Modal = (props) => {
 	return ReactDOM.createPortal(
 		<div className='modal'>
 			<div className='modal__container'>
-				<h2 className='modal__container-title'>Contact Me</h2>
+				<h2 className='modal__container-title'>
+					{!props.language ? 'Contact Me' : 'Contactame'}
+				</h2>
 				{props.children}
 			</div>
 		</div>,
