@@ -1,23 +1,10 @@
-import {
-	LOADING,
-	ERROR,
-	CHANGE_OPTION_LANGUAGE,
-} from '../types/languageTypes';
+import { CHANGE_OPTION_LANGUAGE } from '../types/languageTypes';
 
-export const changeOption = (option) => async (dispatch) => {
+export const changeOption = (option) => async (
+	dispatch
+) => {
 	dispatch({
-		type: LOADING,
+		type: CHANGE_OPTION_LANGUAGE,
+		payload: option,
 	});
-
-	if (option) {
-		dispatch({
-			type: CHANGE_OPTION_LANGUAGE,
-			payload: option,
-		});
-	} else {
-		dispatch({
-			type: ERROR,
-			payload: `Option notfound`,
-		});
-	}
 };

@@ -14,12 +14,54 @@ import {
 	AiOutlineMail,
 	AiOutlineWhatsApp,
 } from 'react-icons/ai';
+import { connect } from 'react-redux';
+import * as mainsActions from '../../actions/mainsActions';
+import * as languageActions from '../../actions/languageActions';
 
-const HeaderProfile = () => {
+const HeaderProfile = (props) => {
 	const [modal, setModal] = useState(false);
+	const [language, setLanguage] = useState(false);
+
+	const handleClick = () => {
+		setLanguage(!language);
+		props.changeOption(language);
+	};
 
 	return (
 		<div className='box'>
+			<div className='box__language'>
+				{language ? (
+					<span
+						style={{ color: 'rgba(16, 139, 12, 0.6)' }}
+						onClick={handleClick}
+					>
+						ENG
+					</span>
+				) : (
+					<span
+						style={{ color: '#f4f4f4' }}
+						onClick={handleClick}
+					>
+						ENG
+					</span>
+				)}
+				<span>|</span>
+				{language ? (
+					<span
+						style={{ color: '#f4f4f4' }}
+						onClick={handleClick}
+					>
+						SPA
+					</span>
+				) : (
+					<span
+						style={{ color: 'rgba(16, 139, 12, 0.6)' }}
+						onClick={handleClick}
+					>
+						SPA
+					</span>
+				)}
+			</div>
 			<div className='box__header'></div>
 			<div className='box__photo'></div>
 			<div className='box__info'>
@@ -143,4 +185,17 @@ const HeaderProfile = () => {
 	);
 };
 
-export default HeaderProfile;
+const mapStateToProps = (reducers) => {
+	const { mainsReducer, languageReducer } = reducers;
+	return { mainsReducer, languageReducer };
+};
+
+const mapDispatchToProps = {
+	...mainsActions,
+	...languageActions,
+};
+
+export default connect(
+	mapStateToProps,
+	mapDispatchToProps
+)(HeaderProfile);
