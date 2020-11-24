@@ -7,7 +7,7 @@ const Data = [
 		id: 1,
 		eyeIcon: <AiFillEye size='13' />,
 		scheduleIcon: <GrSchedules size='30' />,
-		date: '00/00/00',
+		date: new Date(2019, 0, 1),
 		topic: 'Personal',
 		title:
 			'¡Como conseguir tu primer empleo como programador!',
@@ -19,10 +19,10 @@ const Data = [
 		id: 2,
 		eyeIcon: <AiFillEye size='13' />,
 		scheduleIcon: <GrSchedules size='30' />,
-		date: '00/00/00',
+		date: new Date(2019, 0, 1),
 		topic: 'Personal',
 		title:
-			'¡Como conseguir tu primer empleo como programador!',
+			'¡Son importantes las comunidades de desarrollo de software, ¿Por qué?!',
 		text: `Basado en mi experiencia y resumido en 10 puntos, te
     explico lo que necesitas saber para conseguir tu
     primer empleo como programador.`,
@@ -31,10 +31,9 @@ const Data = [
 		id: 3,
 		eyeIcon: <AiFillEye size='13' />,
 		scheduleIcon: <GrSchedules size='30' />,
-		date: '00/00/00',
+		date: new Date(2019, 0, 1),
 		topic: 'Personal',
-		title:
-			'¡Como conseguir tu primer empleo como programador!',
+		title: 'Que es Git y Github? Te ayudan?',
 		text: `Basado en mi experiencia y resumido en 10 puntos, te
     explico lo que necesitas saber para conseguir tu
     primer empleo como programador.`,
@@ -43,10 +42,9 @@ const Data = [
 		id: 4,
 		eyeIcon: <AiFillEye size='13' />,
 		scheduleIcon: <GrSchedules size='30' />,
-		date: '00/00/00',
+		date: new Date(2019, 0, 1),
 		topic: 'Personal',
-		title:
-			'¡Como conseguir tu primer empleo como programador!',
+		title: '¡De Ingeniero Mecánico  a Frontend Developer!',
 		text: `Basado en mi experiencia y resumido en 10 puntos, te
     explico lo que necesitas saber para conseguir tu
     primer empleo como programador.`,
@@ -55,10 +53,10 @@ const Data = [
 		id: 5,
 		eyeIcon: <AiFillEye size='13' />,
 		scheduleIcon: <GrSchedules size='30' />,
-		date: '00/00/00',
+		date: new Date(2019, 0, 1),
 		topic: 'Personal',
-		title:
-			'¡Como conseguir tu primer empleo como programador!',
+		title: `¡Por qué JavaScript es una muy buena opcion para iniciate
+			en el desarrollo web!`,
 		text: `Basado en mi experiencia y resumido en 10 puntos, te
     explico lo que necesitas saber para conseguir tu
     primer empleo como programador.`,
@@ -67,58 +65,9 @@ const Data = [
 		id: 6,
 		eyeIcon: <AiFillEye size='13' />,
 		scheduleIcon: <GrSchedules size='30' />,
-		date: '00/00/00',
+		date: new Date(2019, 0, 1),
 		topic: 'Personal',
-		title:
-			'¡Como conseguir tu primer empleo como programador!',
-		text: `Basado en mi experiencia y resumido en 10 puntos, te
-    explico lo que necesitas saber para conseguir tu
-    primer empleo como programador.`,
-	},
-	{
-		id: 7,
-		eyeIcon: <AiFillEye size='13' />,
-		scheduleIcon: <GrSchedules size='30' />,
-		date: '00/00/00',
-		topic: 'Personal',
-		title:
-			'¡Como conseguir tu primer empleo como programador!',
-		text: `Basado en mi experiencia y resumido en 10 puntos, te
-    explico lo que necesitas saber para conseguir tu
-    primer empleo como programador.`,
-	},
-	{
-		id: 8,
-		eyeIcon: <AiFillEye size='13' />,
-		scheduleIcon: <GrSchedules size='30' />,
-		date: '00/00/00',
-		topic: 'Personal',
-		title:
-			'¡Como conseguir tu primer empleo como programador!',
-		text: `Basado en mi experiencia y resumido en 10 puntos, te
-    explico lo que necesitas saber para conseguir tu
-    primer empleo como programador.`,
-	},
-	{
-		id: 9,
-		eyeIcon: <AiFillEye size='13' />,
-		scheduleIcon: <GrSchedules size='30' />,
-		date: '00/00/00',
-		topic: 'Personal',
-		title:
-			'¡Como conseguir tu primer empleo como programador!',
-		text: `Basado en mi experiencia y resumido en 10 puntos, te
-    explico lo que necesitas saber para conseguir tu
-    primer empleo como programador.`,
-	},
-	{
-		id: 10,
-		eyeIcon: <AiFillEye size='13' />,
-		scheduleIcon: <GrSchedules size='30' />,
-		date: '00/00/00',
-		topic: 'Personal',
-		title:
-			'¡Como conseguir tu primer empleo como programador!',
+		title: 'React vs Angular vs Vue!',
 		text: `Basado en mi experiencia y resumido en 10 puntos, te
     explico lo que necesitas saber para conseguir tu
     primer empleo como programador.`,

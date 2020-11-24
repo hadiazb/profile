@@ -83,7 +83,13 @@
 						align-items: center;
 						& p {
 							padding: 7px 0 0;
-							font-size: 0.6em;
+							font-size: 0.55em;
+						}
+
+						@media (min-width: 500px) {
+							& p {
+								font-size: 0.7em;
+							}
 						}
 					}
 

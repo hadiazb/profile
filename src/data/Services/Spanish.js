@@ -11,8 +11,8 @@ const DataServicesSpanish = [
 		id: 1,
 		title: 'Frontend',
 		text: `
-      Soy un desarrollador de JavaScript Full Stack enfocado en
-      la interfaz, me gusta manejar el ciclo de vida de
+			Soy un desarrollador de JavaScript Full Stack enfocado en el
+			desarrollo de interfazes, me gusta manejar el ciclo de vida de
       aplicaciones web con React, también me gusta usar
       empacadores como Webpack, tengo un gran conocimiento en
       HTML y CSS, así como preprocesadores como SASS o Stylus.`,
@@ -23,8 +23,8 @@ const DataServicesSpanish = [
 		title: 'Backend',
 		text: `
       En el Back End, tuve la oportunidad de usar
-      Nodo con su marco Express para generar servicios API
-      con arquitectura REST, donde he logrado conectarme
+      Node con su framework Express para generar servicios API
+      con arquitectura REST, donde he logrado conectar servicios como
       bases de datos tanto relacionales como no relacionales.`,
 		icon: <FaCode size='20' />,
 	},
@@ -33,9 +33,9 @@ const DataServicesSpanish = [
 		title: 'Cloud',
 		text: `
     En el mundo de la nube, generalmente he usado diferentes servicios
-    para implementar aplicaciones y almacenar información, algunas 
-    herramientas son Vercel, Firebase y Heroku para aplicaciones 
-    Frontend, también gracias a Heroku y AWS he realizado despliegues 
+    para implementar aplicaciones y almacenar información, algunas
+    herramientas son Vercel, Firebase y Heroku para aplicaciones
+    Frontend, también gracias a Heroku y AWS he realizado despliegues
     de APIs e instancias a bases de datos.`,
 		icon: <FaCloud size='20' />,
 	},

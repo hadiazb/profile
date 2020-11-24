@@ -18,8 +18,8 @@ const Education = (props) => {
 					: `
 				Soy Ingeniero Mecánico de profesión, pero Software
 				Desarrollador por vocación, también soy una persona que cree
-				en cualquier forma de educación, especialmente autónoma
-				educación. Me considero una persona muy curiosa abierta
+				en cualquier forma de educación, especialmente educación autónoma.
+				Me considero una persona muy curiosa abierta
 				para aprender cosas nuevas, también me gusta afrontar retos
 				y sobre todo conocerlos.`}
 			</p>

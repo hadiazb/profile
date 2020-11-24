@@ -27,7 +27,7 @@ const AboutMe = (props) => {
 						: `
 					Ingeniero Mecánico de la Universidad Nacional de Colombia.
 					Especializado en tecnologías web, desarrollador frontend en
-					React y MERN Stack. Creo que un autodidacta con
+					React y MERN Stack. Soy un desarrollador autodidacta con
 					gran pasión por el mundo de la tecnología.`}
 				</p>
 

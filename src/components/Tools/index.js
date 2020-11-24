@@ -19,7 +19,7 @@ const Tools = (props) => {
 					: `
 				Desde mi experiencia como desarrollador puedo decir que el
 				tecnologías que más he usado tanto en frontend
-				y los proyectos de backend son variados, aquí puedes ver los
+				y los proyectos de backend son variados, aquí puedes ver el
 				nivel de experiencia que tengo en algunos de estos.`}
 			</p>
 			<div className='tools'>

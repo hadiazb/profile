@@ -1,6 +1,7 @@
 import React from 'react';
 import './style.scss';
 import Data from '../../data/Blogs/index';
+import { format } from 'date-fns';
 
 const Blog = () => {
 	return (
@@ -14,7 +15,7 @@ const Blog = () => {
 							<div className='box-center'>
 								<div className='date'>
 									{item.scheduleIcon}
-									<p>{item.date}</p>
+									<p>{format(item.date, 'PPP')}</p>
 								</div>
 								<div className='type'>
 									<h6>Topic</h6>
