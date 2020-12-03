@@ -8,6 +8,7 @@ import {
 	AiOutlineCaretDown,
 } from 'react-icons/ai';
 import Modal from '../ModalContact/index';
+import Swal from 'sweetalert2';
 import {
 	AiOutlineClose,
 	AiFillPhone,
@@ -21,10 +22,50 @@ import * as languageActions from '../../actions/languageActions';
 const HeaderProfile = (props) => {
 	const [modal, setModal] = useState(false);
 	const [language, setLanguage] = useState(false);
+	const [data, setData] = useState({
+		name: '',
+		email: '',
+		commentary: '',
+	});
 
 	const handleClick = () => {
 		setLanguage(!language);
 		props.changeOption(language);
+	};
+
+	const handleSubmit = (event) => {
+		event.preventDefault();
+		const url = 'http://localhost:8000/api/users';
+
+		fetch(url, {
+			method: 'POST',
+			body: JSON.stringify(data),
+			headers: {
+				'Content-Type': 'application/json',
+			},
+		})
+			.then((res) => res.json())
+			.catch((error) => console.error('Error:', error))
+			.then((response) => {
+				console.log('Success:', response.details);
+				Swal.fire({
+					title: '<h6>Data Registed</h6>',
+					background: 'rgba(255, 255, 255, 1)',
+					timer: 3000,
+					timerProgressBar: true,
+					icon: 'success',
+					showConfirmButton: false,
+				});
+			});
+
+		setModal(!modal);
+	};
+
+	const handleInputChange = (event) => {
+		setData({
+			...data,
+			[event.target.name]: event.target.value,
+		});
 	};
 
 	return (
@@ -117,9 +158,7 @@ const HeaderProfile = (props) => {
 				</a>
 				<button
 					className='box__contact-item'
-					onClick={() =>
-						modal ? setModal(false) : setModal(true)
-					}
+					onClick={() => setModal(!modal)}
 				>
 					<h4>
 						{!props.languageReducer.language
@@ -135,9 +174,7 @@ const HeaderProfile = (props) => {
 					language={props.languageReducer.language}
 				>
 					<button
-						onClick={() =>
-							!modal ? setModal(true) : setModal(false)
-						}
+						onClick={() => setModal(!modal)}
 						className='modal__container-button'
 					>
 						<AiOutlineClose size='20' />
@@ -163,27 +200,37 @@ const HeaderProfile = (props) => {
 								<p>(+57) 311-268-1981</p>
 							</li>
 						</ul>
-						<form className='form'>
-							<input
-								className='form__text'
-								type='name'
-								placeholder='Name...'
-							/>
-							<input
-								className='form__text'
-								type='email'
-								placeholder='Email...'
-							/>
-							<textarea
-								className='form__commentary'
-								type='text'
-								placeholder='Commentary...'
-							></textarea>
-							<input
-								className='form__submit'
-								type='submit'
-								value='Send'
-							/>
+						<form className='form' onSubmit={handleSubmit}>
+							<label htmlFor='name'>
+								<input
+									className='form__text'
+									type='name'
+									name='name'
+									placeholder='Name...'
+									onChange={handleInputChange}
+								/>
+							</label>
+							<label htmlFor='email'>
+								<input
+									className='form__text'
+									type='email'
+									name='email'
+									placeholder='Email...'
+									onChange={handleInputChange}
+								/>
+							</label>
+							<label htmlFor='commentary'>
+								<textarea
+									className='form__commentary'
+									type='commentary'
+									name='commentary'
+									placeholder='Commentary...'
+									onChange={handleInputChange}
+								></textarea>
+							</label>
+							<button className='form__submit' type='submit'>
+								Send
+							</button>
 						</form>
 					</div>
 				</Modal>
