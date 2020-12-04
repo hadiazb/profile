@@ -33,9 +33,10 @@ const HeaderProfile = (props) => {
 		props.changeOption(language);
 	};
 
-	const handleSubmit = (event) => {
+	const handleSubmit = async (event) => {
 		event.preventDefault();
-		const url = 'http://localhost:8000/api/users';
+		const url =
+			'https://api-porfolio.herokuapp.com/api/users';
 
 		fetch(url, {
 			method: 'POST',
