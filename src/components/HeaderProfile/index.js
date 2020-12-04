@@ -46,9 +46,17 @@ const HeaderProfile = (props) => {
 			},
 		})
 			.then((res) => res.json())
-			.catch((error) => console.error('Error:', error))
+			.catch((error) =>
+				Swal.fire({
+					title: `<h6>${error.message}</h6>`,
+					background: 'rgba(255, 255, 255, 1)',
+					timer: 3000,
+					timerProgressBar: true,
+					icon: 'error',
+					showConfirmButton: false,
+				})
+			)
 			.then((response) => {
-				console.log('Success:', response.details);
 				Swal.fire({
 					title: '<h6>Data Registed</h6>',
 					background: 'rgba(255, 255, 255, 1)',
