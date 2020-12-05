@@ -45,7 +45,30 @@ const HeaderProfile = (props) => {
 				'Content-Type': 'application/json',
 			},
 		})
-			.then((res) => res.json())
+			.then((res) => {
+				res.json();
+				if (res.status === 500) {
+					Swal.fire({
+						title: `<h6>There a error in the data</h6>`,
+						background: 'rgba(255, 255, 255, 1)',
+						timer: 3000,
+						timerProgressBar: true,
+						icon: 'error',
+						showConfirmButton: false,
+					});
+				}
+
+				if (res.status === 200) {
+					Swal.fire({
+						title: '<h6>Data Registered</h6>',
+						background: 'rgba(255, 255, 255, 1)',
+						timer: 3000,
+						timerProgressBar: true,
+						icon: 'success',
+						showConfirmButton: false,
+					});
+				}
+			})
 			.catch((error) =>
 				Swal.fire({
 					title: `<h6>${error.message}</h6>`,
@@ -55,18 +78,7 @@ const HeaderProfile = (props) => {
 					icon: 'error',
 					showConfirmButton: false,
 				})
-			)
-			.then((response) => {
-				Swal.fire({
-					title: '<h6>Data Registed</h6>',
-					background: 'rgba(255, 255, 255, 1)',
-					timer: 3000,
-					timerProgressBar: true,
-					icon: 'success',
-					showConfirmButton: false,
-				});
-			});
-
+			);
 		setModal(!modal);
 	};
 
