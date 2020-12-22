@@ -1,7 +1,6 @@
 import React from 'react';
 import { CgFigma, CgCodeSlash } from 'react-icons/cg';
 import { FaPaintBrush } from 'react-icons/fa';
-// import Image from '../../assets/programing.jpg';
 import WeatherLogin from '../../assets/Projects/weather.png';
 import CuartoDeMilla from '../../assets/Projects/Cuartodemilla.png';
 import GrupoDot from '../../assets/Projects/grupodot.png';
