@@ -8,7 +8,7 @@ const Bullets = (props) => {
 				<h5 className='bullet__content-response'>30</h5>
 			</div>
 			<div className='bullet__content'>
-				<h5>{props.language ? 'RESIDENCE' : 'RECIDENCIA'}</h5>
+				<h5>{props.language ? 'RESIDENCE' : 'RESIDENCIA'}</h5>
 				<h5 className='bullet__content-response'>Colombia</h5>
 			</div>
 			<div className='bullet__content'>

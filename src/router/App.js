@@ -13,7 +13,7 @@ const App = (props) => {
 	const loading = () => {
 		setTimeout(() => {
 			setTime(true);
-		}, 6000);
+		}, 2000);
 		if (time) {
 			return (
 				<Fragment>
