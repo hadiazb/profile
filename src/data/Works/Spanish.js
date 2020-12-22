@@ -1,19 +1,11 @@
 import React from 'react';
 import { CgFigma, CgCodeSlash } from 'react-icons/cg';
 import { FaPaintBrush } from 'react-icons/fa';
-import WeatherLogin from '../../assets/Projects/weather.png';
-import CuartoDeMilla from '../../assets/Projects/Cuartodemilla.png';
-import GrupoDot from '../../assets/Projects/grupodot.png';
-import Cycling from '../../assets/Projects/cycling.png';
-import Covid19 from '../../assets/Projects/covid19.png';
-import Podcasts from '../../assets/Projects/podcasts.png';
-import Vienes from '../../assets/Projects/vienes.png';
-import Babysitter from '../../assets/Projects/babysitter.png';
 
 const DataWorks = [
 	{
 		id: 1,
-		image: WeatherLogin,
+		image: 'https://firebasestorage.googleapis.com/v0/b/portafolio-a8d13.appspot.com/o/Potafolio%2FWorks%2Fweather.png?alt=media&token=79e8871f-b6da-41b8-97fa-d40a2f2c2e1d',
 		text_image: 'Imagen',
 		title: 'Global Weather Application',
 		text: `
@@ -26,7 +18,7 @@ const DataWorks = [
 	},
 	{
 		id: 2,
-		image: CuartoDeMilla,
+		image: 'https://firebasestorage.googleapis.com/v0/b/portafolio-a8d13.appspot.com/o/Potafolio%2FWorks%2FCuartodemilla.png?alt=media&token=90deac09-1096-4e3e-916e-201dc747b72c',
 		text_image: 'Imagen',
 		title: '1/4 de Milla',
 		text: `
@@ -38,7 +30,7 @@ const DataWorks = [
 	},
 	{
 		id: 3,
-		image: GrupoDot,
+		image: 'https://firebasestorage.googleapis.com/v0/b/portafolio-a8d13.appspot.com/o/Potafolio%2FWorks%2Fgrupodot.png?alt=media&token=902b1f0b-21fd-4bcf-97f6-091afdbbc7b1',
 		text_image: 'Imagen',
 		title: 'Search weather city',
 		text: `
@@ -49,7 +41,7 @@ const DataWorks = [
 	},
 	{
 		id: 4,
-		image: Cycling,
+		image: 'https://firebasestorage.googleapis.com/v0/b/portafolio-a8d13.appspot.com/o/Potafolio%2FWorks%2Fcycling.png?alt=media&token=6b85a502-bea2-42fd-bcad-5f9a661a3f0d',
 		text_image: 'Imagen',
 		title: 'Redux Cycling Manager',
 		text: `Proyecto personal con React y Redux, puedes ser Tecnico del
@@ -59,7 +51,7 @@ const DataWorks = [
 	},
 	{
 		id: 5,
-		image: Covid19,
+		image: 'https://firebasestorage.googleapis.com/v0/b/portafolio-a8d13.appspot.com/o/Potafolio%2FWorks%2Fcovid19.png?alt=media&token=e2a79c31-2ff4-4d4d-9869-6ff3ee3209f6',
 		text_image: 'Imagen',
 		title: 'USA Covid 19 ',
 		text: `En este proyecto tuve la oportunidad de crear el frontend
@@ -70,7 +62,7 @@ const DataWorks = [
 	},
 	{
 		id: 6,
-		image: Podcasts,
+		image: 'https://firebasestorage.googleapis.com/v0/b/portafolio-a8d13.appspot.com/o/Potafolio%2FWorks%2Fpodcasts.png?alt=media&token=7b8660de-753a-462e-9375-a63e73eeda4d',
 		text_image: 'Imagen',
 		title: 'Podcasts',
 		text: `
@@ -81,7 +73,7 @@ const DataWorks = [
 	},
 	{
 		id: 7,
-		image: Vienes,
+		image: 'https://firebasestorage.googleapis.com/v0/b/portafolio-a8d13.appspot.com/o/Potafolio%2FWorks%2Fvienes.png?alt=media&token=984d5ec2-8239-4ed1-b4a8-ace5ba8d8df0',
 		text_image: 'Imagen',
 		title: 'Vienes',
 		text: `
@@ -93,7 +85,7 @@ const DataWorks = [
 	},
 	{
 		id: 8,
-		image: Babysitter,
+		image: 'https://firebasestorage.googleapis.com/v0/b/portafolio-a8d13.appspot.com/o/Potafolio%2FWorks%2Fbabysitter.png?alt=media&token=9336908e-892c-4097-8df7-99c0a5e37fac',
 		text_image: 'Imagen',
 		title: 'BabySitter Finder',
 		text: `
